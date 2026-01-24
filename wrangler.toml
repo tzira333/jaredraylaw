@@ -2,6 +2,7 @@ name = "jaredraylaw"
 main = "worker.js"
 compatibility_date = "2024-01-01"
 
+
 # D1 Database Binding
 [[d1_databases]]
 binding = "DB"
