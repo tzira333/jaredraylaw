@@ -6,7 +6,7 @@ compatibility_date = "2024-01-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "jaredraylaw-db"
-database_id = " 58f3789b-a1ac-4101-9b68-6b7023344dfa28672" # This will be filled after creating the database
+database_id = "12345678-abcd-1234-abcd-123456789abc" # This will be filled after creating the database
 
 # Assets configuration for serving static files
 [site]
