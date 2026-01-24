@@ -197,6 +197,12 @@ ul {
     color: var(--primary-blue);
 }
 
+.nav-logo {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
 .nav-brand i {
     font-size: 1.75rem;
     color: var(--secondary-blue);
@@ -581,6 +587,102 @@ ul {
 }
 
 /* ========================================
+   STRENGTHS SECTION
+   ======================================== */
+
+.strengths {
+    padding: var(--spacing-xl) var(--spacing-sm);
+    background: var(--light-gray);
+}
+
+.strengths-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.strength-item {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.strength-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--secondary-blue);
+}
+
+.strength-item i {
+    font-size: 3rem;
+    color: var(--secondary-blue);
+    margin-bottom: 1rem;
+}
+
+.strength-item h3 {
+    font-size: 1.25rem;
+    color: var(--primary-blue);
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+}
+
+.strength-item p {
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+/* ========================================
+   SERVICE AREAS SECTION
+   ======================================== */
+
+.service-areas {
+    padding: var(--spacing-xl) var(--spacing-sm);
+    background: var(--white);
+    text-align: center;
+}
+
+.service-areas .section-title {
+    margin-bottom: 1rem;
+}
+
+.areas-intro {
+    font-size: 1.125rem;
+    color: var(--dark-gray);
+    margin-bottom: 2rem;
+}
+
+.areas-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.area-tag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, var(--primary-blue), var(--sky-blue));
+    color: var(--white);
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+.area-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* ========================================
    TESTIMONIALS SECTION
    ======================================== */
 
@@ -774,13 +876,6 @@ ul {
     opacity: 0.95;
 }
 
-.map-container {
-    margin-top: 2rem;
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: var(--shadow-md);
-}
-
 /* ========================================
    FOOTER
    ======================================== */
@@ -809,6 +904,13 @@ ul {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.footer-logo {
+    height: 40px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .footer-column p {
@@ -1032,11 +1134,36 @@ ul {
         left: 1.5rem;
     }
     
+    .nav-logo {
+        height: 35px;
+    }
+    
+    .footer-logo {
+        height: 30px;
+    }
+    
+    .nav-brand span {
+        font-size: 1.25rem;
+    }
+    
     .section-title {
         font-size: 1.75rem;
     }
     
     .cta-banner h2 {
         font-size: 1.5rem;
+    }
+    
+    .strengths-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .areas-list {
+        gap: 0.5rem;
+    }
+    
+    .area-tag {
+        font-size: 0.8125rem;
+        padding: 0.4rem 0.875rem;
     }
 }

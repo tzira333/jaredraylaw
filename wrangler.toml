@@ -1,32 +1,17 @@
 name = "jaredraylaw"
-main = "worker.js"
 compatibility_date = "2024-01-01"
+
+# Pages build output directory
+pages_build_output_dir = "public"
 
 # D1 Database Binding
 [[d1_databases]]
 binding = "DB"
 database_name = "jaredraylaw-db"
-database_id = "" # This will be filled after creating the database
+database_id = "5028a850-3b1a-4731-aeba-4449a256d94d"
 
-# Assets configuration for serving static files
-[site]
-bucket = "./public"
-
-# Custom domains (configured via Cloudflare Dashboard)
-# After deployment, add these in: Workers & Pages → jaredraylaw → Settings → Triggers → Custom Domains
-# - www.jaredraylaw.com
-# - jaredraylaw.com
-
-# Environment variables (optional)
+# Environment variables
 [vars]
 ENVIRONMENT = "production"
 CONTACT_EMAIL = "jared@jaredraylaw.com"
 SITE_URL = "https://www.jaredraylaw.com"
-
-# Production environment
-[env.production]
-name = "jaredraylaw"
-
-# Development/staging environment
-[env.staging]
-name = "jaredraylaw-staging"
