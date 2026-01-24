@@ -1,6 +1,6 @@
-# Jared Ray Law - Professional Law Practice Website
+# Ray Law LLC - Professional Law Practice Website
 
-A modern, fully responsive law practice website with a professional blue color scheme, featuring prominent call-to-action buttons for direct phone contact.
+A modern, fully responsive law practice website for Ray Law LLC with a professional blue color scheme, featuring prominent call-to-action buttons for direct phone contact.
 
 ## 🌟 Live Features
 
@@ -9,9 +9,17 @@ A modern, fully responsive law practice website with a professional blue color s
 #### 🎨 Design & Layout
 - **Modern blue color scheme** - Professional navy, sky blue, and accent blues
 - **Fully responsive design** - Works perfectly on desktop, tablet, and mobile devices
-- **Clean, professional layout** - Inspired by successful law practice websites
+- **Clean, professional layout** - Optimized for legal services
 - **Smooth animations** - Fade-in effects and hover transitions
 - **Fixed navigation bar** - Stays visible as users scroll
+- **Professional logo** - Ray Law LLC logo integrated throughout the site
+
+#### 📞 Contact Information
+- **Business Name**: Ray Law LLC
+- **Phone**: (440) 413-5311 (clickable for mobile)
+- **Location**: Kirtland, Ohio in Lake County
+- **Specialties**: North East Ohio Assets Lawyer, Notary Services
+- **Service Areas**: Lake County, Geauga County, Cuyahoga County, Washington County, Ohio
 
 #### 📱 Call-to-Action Features
 1. **Desktop Header Call Button** - Prominent call button in navigation bar (desktop only)
@@ -31,54 +39,75 @@ A modern, fully responsive law practice website with a professional blue color s
    - Desktop call button with phone number
    - Smooth scrolling to sections
    - Active link highlighting
+   - Updated to Ray Law LLC branding
+   - Professional logo displayed in header (50px desktop, 35px mobile)
 
 2. **Hero Section**
    - Full-screen gradient background
-   - Compelling headline and subtitle
+   - Compelling headline highlighting North East Ohio Assets Lawyer
+   - Notary Services and county coverage prominently displayed
    - Two prominent CTAs: "Call Now" and "Contact Us"
    - Animated background effects
 
-3. **CTA Banners**
-   - Multiple conversion-focused banner sections
-   - Call buttons prominently featured
-   - Alternating blue and light color schemes
+3. **Key Strengths Section** ⭐ NEW
+   - Highlights Jared's core competencies
+   - 7 strength areas with icons:
+     - Listening & Understanding Clients
+     - Exceptional Research Skills
+     - Planning & Strategizing
+     - Cleanup & Organizational Skills
+     - Expert Negotiation
+     - Document Review & Management
+     - Problem-Solving & Troubleshooting
 
-4. **Services/Practice Areas**
-   - 6 service cards with icons:
-     - Family Law
-     - Bankruptcy
-     - Wills & Trusts
-     - Personal Injury
-     - Traffic Tickets
-     - Criminal Defense
+4. **Service Areas Section** ⭐ NEW
+   - Lists all cities and communities served
+   - 26 municipalities displayed with modern tag design
+   - Based in Kirtland, Lake County
+   - Coverage across Northeast Ohio
+
+5. **Services/Practice Areas** (Updated)
+   - 8 service areas with icons:
+     - Real Estate Law
+     - Business Law (LLC & Corporation formation, Buying/Selling)
+     - Contract Law
+     - Estate Planning
+     - Wills & Trusts (including Transfers on Death, PODs, Survivorship)
+     - Powers of Attorney (Personal & Business)
+     - Advance Directives (Healthcare POAs, Living Wills, Organ Donation)
+     - Notary Services
    - Hover animations
    - "Learn More" links
+   - ❌ Removed: Criminal Defense, Traffic Tickets, Personal Injury, Family Law, Bankruptcy
 
-5. **About Section**
+6. **About Section**
    - Free consultation information
    - Feature highlights with checkmarks
    - Professional image placeholder
    - Call-to-action button
+   - Updated to Ray Law LLC branding
 
-6. **Testimonials**
+7. **Testimonials**
    - 3 client reviews
    - 5-star ratings
    - Client names and case types
    - Hover effects
 
-7. **Contact Section**
-   - Full-featured contact form with validation
+8. **Contact Section**
+   - Full-featured contact form with updated practice area dropdown
    - Phone number auto-formatting
    - Success/error messages
-   - Contact information card
+   - Contact information card (❌ street address removed)
+   - Location: Kirtland, Ohio, Lake County
    - Google Maps integration
    - "Call Now" CTA box
    - Office hours display
 
-8. **Footer**
-   - Practice areas links
+9. **Footer** (Updated)
+   - Ray Law LLC branding
+   - Updated practice areas links
    - Quick navigation links
-   - Contact information
+   - Contact information (location without street address)
    - Social media links (open in new tabs)
    - Legal disclaimers
    - Copyright information

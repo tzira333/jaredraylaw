@@ -9,7 +9,7 @@ CREATE TABLE contact_submissions (
     name TEXT NOT NULL,
     email TEXT NOT NULL,
     phone TEXT NOT NULL,
-    service TEXT NOT NULL CHECK(service IN ('family', 'bankruptcy', 'estate', 'injury', 'traffic', 'other')),
+    service TEXT NOT NULL CHECK(service IN ('family', 'bankruptcy', 'estate', 'injury', 'traffic', 'criminal', 'other')),
     message TEXT NOT NULL,
     status TEXT NOT NULL DEFAULT 'new' CHECK(status IN ('new', 'contacted', 'closed')),
     created_at INTEGER NOT NULL,

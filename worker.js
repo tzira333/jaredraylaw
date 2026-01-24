@@ -63,11 +63,8 @@ export default {
       }
     }
 
-// Let Pages serve static files
-    return new Response(null, {
-      status: 404,
-      statusText: 'Not Found'
-    });
+    // Serve static files (HTML, CSS, JS, etc.)
+    return env.ASSETS.fetch(request);
   },
 };
 
