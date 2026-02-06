@@ -520,6 +520,34 @@ ul {
     gap: 0.75rem;
 }
 
+/* Practice Area Details Section */
+.practice-area-details {
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.practice-area-details h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.practice-area-details button:hover {
+    color: var(--primary-blue) !important;
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
 /* ========================================
    ABOUT SECTION
    ======================================== */

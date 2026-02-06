@@ -216,22 +216,46 @@
             </div>
             
             <div class="services-grid">
-                <div class="service-card fade-in">
+                <div class="service-card fade-in" id="realEstateCard" style="position: relative; cursor: pointer;" 
+                     onmouseover="document.getElementById('realEstateTooltip').style.display='block'"
+                     onmouseout="document.getElementById('realEstateTooltip').style.display='none'"
+                     onclick="document.getElementById('realEstateDetails').style.display='block'; document.getElementById('contact').scrollIntoView({behavior: 'smooth', block: 'start'});">
                     <div class="service-icon">
                         <i class="fas fa-home"></i>
                     </div>
                     <h3>Real Estate Law</h3>
                     <p>I provide comprehensive real estate legal services including property transactions, title reviews, and closing assistance.</p>
-                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="service-link" onclick="event.stopPropagation(); document.getElementById('realEstateDetails').style.display='block'; document.getElementById('contact').scrollIntoView({behavior: 'smooth', block: 'start'}); return false;">Learn More <i class="fas fa-arrow-right"></i></a>
+                    
+                    <!-- Hover Tooltip -->
+                    <div id="realEstateTooltip" style="display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); margin-top: 1rem; background: var(--primary-blue); color: white; padding: 1.5rem; border-radius: 0.75rem; box-shadow: var(--shadow-xl); z-index: 1000; width: 90%; max-width: 400px; pointer-events: none;">
+                        <div style="position: absolute; top: -8px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 8px solid var(--primary-blue);"></div>
+                        <p style="font-size: 0.95rem; line-height: 1.6; margin: 0; text-align: center;">
+                            <strong>Click to see full details!</strong><br>
+                            I work with realtors, landlords, tenants, property managers, title agents, banks, and property owners on deeds, leases, evictions, and much more.
+                        </p>
+                    </div>
                 </div>
                 
-                <div class="service-card fade-in">
+                <div class="service-card fade-in" id="businessLawCard" style="position: relative; cursor: pointer;" 
+                     onmouseover="document.getElementById('businessLawTooltip').style.display='block'"
+                     onmouseout="document.getElementById('businessLawTooltip').style.display='none'"
+                     onclick="document.getElementById('businessLawDetails').style.display='block'; document.getElementById('contact').scrollIntoView({behavior: 'smooth', block: 'start'});">
                     <div class="service-icon">
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <h3>Business Law</h3>
                     <p>I specialize in establishing LLCs and Corporations, and I provide expert guidance for buying and selling businesses.</p>
-                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="service-link" onclick="event.stopPropagation(); document.getElementById('businessLawDetails').style.display='block'; document.getElementById('contact').scrollIntoView({behavior: 'smooth', block: 'start'}); return false;">Learn More <i class="fas fa-arrow-right"></i></a>
+                    
+                    <!-- Hover Tooltip -->
+                    <div id="businessLawTooltip" style="display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); margin-top: 1rem; background: var(--primary-blue); color: white; padding: 1.5rem; border-radius: 0.75rem; box-shadow: var(--shadow-xl); z-index: 1000; width: 90%; max-width: 400px; pointer-events: none;">
+                        <div style="position: absolute; top: -8px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 8px solid var(--primary-blue);"></div>
+                        <p style="font-size: 0.95rem; line-height: 1.6; margin: 0; text-align: center;">
+                            <strong>Click to see full details!</strong><br>
+                            LLCs, Corporations, Operating Agreements, corporate record keeping, and business succession planning.
+                        </p>
+                    </div>
                 </div>
                 
                 <div class="service-card fade-in">
@@ -243,13 +267,25 @@
                     <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 
-                <div class="service-card fade-in">
+                <div class="service-card fade-in" id="estatePlanningCard" style="position: relative; cursor: pointer;" 
+                     onmouseover="document.getElementById('estatePlanningTooltip').style.display='block'"
+                     onmouseout="document.getElementById('estatePlanningTooltip').style.display='none'"
+                     onclick="document.getElementById('estatePlanningDetails').style.display='block'; document.getElementById('contact').scrollIntoView({behavior: 'smooth', block: 'start'});">
                     <div class="service-icon">
                         <i class="fas fa-landmark"></i>
                     </div>
                     <h3>Estate Planning</h3>
                     <p>I provide comprehensive estate planning including wills, trusts, powers of attorney, and advance directives.</p>
-                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="service-link" onclick="event.stopPropagation(); document.getElementById('estatePlanningDetails').style.display='block'; document.getElementById('contact').scrollIntoView({behavior: 'smooth', block: 'start'}); return false;">Learn More <i class="fas fa-arrow-right"></i></a>
+                    
+                    <!-- Hover Tooltip -->
+                    <div id="estatePlanningTooltip" style="display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); margin-top: 1rem; background: var(--primary-blue); color: white; padding: 1.5rem; border-radius: 0.75rem; box-shadow: var(--shadow-xl); z-index: 1000; width: 90%; max-width: 400px; pointer-events: none;">
+                        <div style="position: absolute; top: -8px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 8px solid var(--primary-blue);"></div>
+                        <p style="font-size: 0.95rem; line-height: 1.6; margin: 0; text-align: center;">
+                            <strong>Click to see full details!</strong><br>
+                            Wills, trusts, TODs, PODs, powers of attorney, advance directives, and making it easy for your heirs.
+                        </p>
+                    </div>
                 </div>
                 
                 <div class="service-card fade-in">
@@ -287,6 +323,27 @@
                     <p>I provide professional notary for all your document authentication needs.</p>
                     <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
+                
+                <div class="service-card fade-in" id="litigationAvoidanceCard" style="position: relative; cursor: pointer;" 
+                     onmouseover="document.getElementById('litigationAvoidanceTooltip').style.display='block'"
+                     onmouseout="document.getElementById('litigationAvoidanceTooltip').style.display='none'"
+                     onclick="document.getElementById('litigationAvoidanceDetails').style.display='block'; document.getElementById('contact').scrollIntoView({behavior: 'smooth', block: 'start'});">
+                    <div class="service-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Litigation Avoidance</h3>
+                    <p>I help you strategize how to avoid lawsuits and exit litigation. Nobody wins in court except the lawyers.</p>
+                    <a href="#contact" class="service-link" onclick="event.stopPropagation(); document.getElementById('litigationAvoidanceDetails').style.display='block'; document.getElementById('contact').scrollIntoView({behavior: 'smooth', block: 'start'}); return false;">Learn More <i class="fas fa-arrow-right"></i></a>
+                    
+                    <!-- Hover Tooltip -->
+                    <div id="litigationAvoidanceTooltip" style="display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); margin-top: 1rem; background: var(--primary-blue); color: white; padding: 1.5rem; border-radius: 0.75rem; box-shadow: var(--shadow-xl); z-index: 1000; width: 90%; max-width: 400px; pointer-events: none;">
+                        <div style="position: absolute; top: -8px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 8px solid var(--primary-blue);"></div>
+                        <p style="font-size: 0.95rem; line-height: 1.6; margin: 0; text-align: center;">
+                            <strong>Click to see full details!</strong><br>
+                            Candid advice about legal disputes, court costs, and how to strategize exit strategies from litigation.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -307,8 +364,23 @@
             <div class="about-content">
                 <div class="about-text fade-in">
                     <h2 class="section-title">Free Legal Advice</h2>
-                    <p class="lead">You're in a tough spot. You shouldn't have to pay out of pocket to find out if I'm the right attorney for you.</p>
-                    <p>At Ray Law LLC, I offer free consultations for every client. I'll meet with you to go over the details of your situation and see if I can help you resolve it. My commitment is to provide you with honest, practical legal advice from the very start.</p>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <p class="lead" style="font-weight: 600; color: var(--primary-blue); margin-bottom: 0.5rem;">Getting ahead is NOT getting behind. Or, not getting behind IS getting ahead.</p>
+                        <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                            <strong>What that means</strong> – Try not to make mistakes. Or, anyway, if you do, try to make the mistakes as small as possible. When you look back, it will be your errors that really hurt you.
+                        </p>
+                        
+                        <p class="lead" style="font-weight: 600; color: var(--primary-blue); margin-bottom: 0.5rem;">Don't interact with "the Man".</p>
+                        <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                            <strong>What that means</strong> – Don't break the law. Don't cheat, steal, or even speed. If you can avoid going to court for any reason, you should.
+                        </p>
+                        
+                        <p class="lead" style="font-weight: 600; color: var(--primary-blue); margin-bottom: 0.5rem;">Look before you leap, or is he who hesitates lost?</p>
+                        <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                            <strong>What that means</strong> - Befriend a lawyer when you don't need one. Opportunities will arise that you should seize. And, if you're going to act quickly, having counsel in-hand is a big plus.
+                        </p>
+                    </div>
                     
                     <div class="about-features">
                         <div class="feature-item">
@@ -456,6 +528,315 @@
                 <p class="section-subtitle">Get in touch for a free consultation</p>
             </div>
             
+            <!-- Real Estate Law Detailed Info (Hidden by default) -->
+            <div id="realEstateDetails" class="practice-area-details" style="display: none; margin-bottom: 3rem; background: var(--white); padding: 2.5rem; border-radius: 1rem; box-shadow: var(--shadow-lg); border-left: 5px solid var(--secondary-blue);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                    <h3 style="color: var(--primary-blue); font-size: 2rem; margin: 0;">
+                        <i class="fas fa-home"></i> Real Estate Law
+                    </h3>
+                    <button onclick="document.getElementById('realEstateDetails').style.display='none'" style="background: none; border: none; font-size: 1.5rem; color: var(--gray); cursor: pointer; padding: 0.5rem;">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div style="line-height: 1.8;">
+                    <p style="font-size: 1.05rem; margin-bottom: 1.5rem; color: var(--dark-gray);">
+                        I frequently work and consult with realtors & brokers, landlords & tenants, property managers, vendors & vendees, title & escrow agents, banks, closing companies, partners and individual property owners.
+                    </p>
+                    
+                    <div style="background: var(--light-gray); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-blue); margin-bottom: 1rem; font-size: 1.2rem;">Common Questions I Can Help You Answer:</h4>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.25rem; color: var(--secondary-blue);"></i>
+                                Are your tenants good? Is your landlord reasonable?
+                            </li>
+                            <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.25rem; color: var(--secondary-blue);"></i>
+                                What are you buying? What is your property improvement plan?
+                            </li>
+                            <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.25rem; color: var(--secondary-blue);"></i>
+                                Are your rentals in a business shell or trust?
+                            </li>
+                            <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.25rem; color: var(--secondary-blue);"></i>
+                                If you were to sell real estate, when? Why?
+                            </li>
+                            <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.25rem; color: var(--secondary-blue);"></i>
+                                Are your properties titled correctly? Will they easily transfer to your heirs?
+                            </li>
+                            <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.25rem; color: var(--secondary-blue);"></i>
+                                Are your real estate taxes out of whack?
+                            </li>
+                            <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.25rem; color: var(--secondary-blue);"></i>
+                                Do you need help leasing commercial space?
+                            </li>
+                            <li style="margin-bottom: 0; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.25rem; color: var(--secondary-blue);"></i>
+                                Would you like help doing a private home sale?
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <h4 style="color: var(--primary-blue); margin-bottom: 1rem; font-size: 1.2rem;">Services I Provide:</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.75rem; margin-bottom: 1.5rem;">
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Deeds and Transfers</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Leases / Licenses (Commercial & Residential)</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Landlord / Tenant Matters</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Survivorship Affidavits</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Trustee Affidavits</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Affidavits of Facts Affecting Title</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Mortgages and Releases</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Land Contracts</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Assignments and Attornments</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Options / Right of First Refusals</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Evictions (Forcible Entry and Detainer)</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Determinations of Value (Board of Revision)</div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="tel:+14404135311" class="btn btn-primary btn-lg">
+                            <i class="fas fa-phone-alt"></i> Call (440) 413-5311 to Discuss Your Real Estate Needs
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Business Law Detailed Info (Hidden by default) -->
+            <div id="businessLawDetails" class="practice-area-details" style="display: none; margin-bottom: 3rem; background: var(--white); padding: 2.5rem; border-radius: 1rem; box-shadow: var(--shadow-lg); border-left: 5px solid var(--secondary-blue);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                    <h3 style="color: var(--primary-blue); font-size: 2rem; margin: 0;">
+                        <i class="fas fa-briefcase"></i> Small Business and "Corporate" Law
+                    </h3>
+                    <button onclick="document.getElementById('businessLawDetails').style.display='none'" style="background: none; border: none; font-size: 1.5rem; color: var(--gray); cursor: pointer; padding: 0.5rem;">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div style="line-height: 1.8;">
+                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: var(--primary-blue); font-weight: 600;">
+                        I can help you establish and maintain an LLC, partnership, joint venture or corporation.
+                    </p>
+                    
+                    <div style="background: var(--light-gray); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem;">
+                        <p style="font-size: 1.05rem; margin-bottom: 1rem; line-height: 1.8;">
+                            Nowadays, you can pretty much use a <strong>limited liability company (LLC)</strong> to handle all your business transactions. But don't just file Articles of Organization, get an EIN, and think that's all of it. You really need a proper <strong>Operating Agreement</strong>, regardless of whether your LLC is single owner (just you) or if you have "partners".
+                        </p>
+                    </div>
+                    
+                    <h4 style="color: var(--primary-blue); margin-bottom: 1rem; font-size: 1.2rem;">Important Considerations:</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                            <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.25rem; color: var(--secondary-blue);"></i>
+                            <strong>Transfer on Death (TOD):</strong> Whatever you set up, make sure it will easily pass TOD to your heirs.
+                        </li>
+                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                            <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.25rem; color: var(--secondary-blue);"></i>
+                            <strong>Buy/Sell Mechanisms:</strong> Create straightforward mechanisms to buy/sell - in case "partners" dispute.
+                        </li>
+                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                            <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.25rem; color: var(--secondary-blue);"></i>
+                            <strong>Business Growth:</strong> Make sure your paperwork allows for business growth (new and continued investment).
+                        </li>
+                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                            <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.25rem; color: var(--secondary-blue);"></i>
+                            <strong>Documentation:</strong> Document all actions taken. Cleanup/fix the messes that happen. Keep a good "corporate" record book.
+                        </li>
+                        <li style="margin-bottom: 0; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                            <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.25rem; color: var(--secondary-blue);"></i>
+                            <strong>Tax & Accounting:</strong> You have to pay taxes and you should associate with a good bookkeeper and accountant.
+                        </li>
+                    </ul>
+                    
+                    <h4 style="color: var(--primary-blue); margin-bottom: 1rem; font-size: 1.2rem;">Corporate Services I Provide:</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.75rem; margin-bottom: 1.5rem;">
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Board of Directors Actions</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Shareholder Actions & Minutes</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Share / Membership Interest Certificates</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Amendments</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Statutory Agent Updates</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Reports & Certificates of Correction</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Reinstatements & Continued Existence</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Statements of Authority</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Denial and Cancellations</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Mergers</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Conversions</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Dissolutions</div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="tel:+14404135311" class="btn btn-primary btn-lg">
+                            <i class="fas fa-phone-alt"></i> Call (440) 413-5311 to Discuss Your Business Needs
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Estate Planning Detailed Info (Hidden by default) -->
+            <div id="estatePlanningDetails" class="practice-area-details" style="display: none; margin-bottom: 3rem; background: var(--white); padding: 2.5rem; border-radius: 1rem; box-shadow: var(--shadow-lg); border-left: 5px solid var(--secondary-blue);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                    <h3 style="color: var(--primary-blue); font-size: 2rem; margin: 0;">
+                        <i class="fas fa-landmark"></i> Estate Planning
+                    </h3>
+                    <button onclick="document.getElementById('estatePlanningDetails').style.display='none'" style="background: none; border: none; font-size: 1.5rem; color: var(--gray); cursor: pointer; padding: 0.5rem;">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div style="line-height: 1.8;">
+                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: var(--primary-blue); font-weight: 600;">
+                        You should sit down and take stock of what you own and to who it will pass. Today!
+                    </p>
+                    
+                    <p style="font-size: 1.05rem; margin-bottom: 2rem; line-height: 1.8;">
+                        I can help with wills, trusts (new and existing), powers of attorney, advance directives (living wills, healthcare powers of attorney, organ donation), and funeral instructions.
+                    </p>
+                    
+                    <div style="background: var(--light-gray); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; text-align: center;">
+                        <p style="font-size: 1.2rem; font-weight: 600; color: var(--primary-blue); margin: 0;">
+                            End of life planning is NOT complicated. Keep things simple and stupid.
+                        </p>
+                    </div>
+                    
+                    <h4 style="color: var(--primary-blue); margin-bottom: 1rem; font-size: 1.2rem;">Helpful Tools & Strategies:</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                            <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.25rem; color: var(--secondary-blue);"></i>
+                            <strong>TODs, PODs, and Survivorship:</strong> Use these arrangements to protect your legacy when you die.
+                        </li>
+                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                            <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.25rem; color: var(--secondary-blue);"></i>
+                            <strong>Powers of Attorney & Trusts:</strong> Use business powers of attorney and/or a trust to ensure your affairs are managed according to your wishes while you're alive.
+                        </li>
+                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                            <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.25rem; color: var(--secondary-blue);"></i>
+                            <strong>Help Your Heirs:</strong> Make it easy for them to skip probate and promptly access and manage what they will own. Avoid as much process and paperwork as possible.
+                        </li>
+                        <li style="margin-bottom: 0; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                            <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.25rem; color: var(--secondary-blue);"></i>
+                            <strong>Your Effort Required:</strong> You'll likely have to request and submit bank, insurance company, brokerage, etc. forms.
+                        </li>
+                    </ul>
+                    
+                    <h4 style="color: var(--primary-blue); margin-bottom: 1rem; font-size: 1.2rem;">You Want a Lawyer To:</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.75rem; margin-bottom: 1.5rem;">
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Organize a simple plan</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Minimize future family exposure</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Push you to complete the process</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Make sure you are using current forms</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Create language about your unique concerns</div>
+                        <div style="padding: 0.75rem; background: #f8f9fa; border-radius: 0.5rem;">• Check that everything is executed and recorded appropriately</div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="tel:+14404135311" class="btn btn-primary btn-lg">
+                            <i class="fas fa-phone-alt"></i> Call (440) 413-5311 to Start Your Estate Plan
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Litigation Avoidance Detailed Info (Hidden by default) -->
+            <div id="litigationAvoidanceDetails" class="practice-area-details" style="display: none; margin-bottom: 3rem; background: var(--white); padding: 2.5rem; border-radius: 1rem; box-shadow: var(--shadow-lg); border-left: 5px solid #dc3545;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                    <h3 style="color: #dc3545; font-size: 2rem; margin: 0;">
+                        <i class="fas fa-balance-scale"></i> Litigation Avoidance
+                    </h3>
+                    <button onclick="document.getElementById('litigationAvoidanceDetails').style.display='none'" style="background: none; border: none; font-size: 1.5rem; color: var(--gray); cursor: pointer; padding: 0.5rem;">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div style="line-height: 1.8;">
+                    <div style="background: #f8d7da; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #dc3545;">
+                        <p style="font-size: 1.1rem; margin: 0; color: #721c24; font-weight: 600;">
+                            ⚠️ If you're headed-for or currently involved in any type of court proceedings, you should promptly change gears.
+                        </p>
+                    </div>
+                    
+                    <div style="background: var(--light-gray); padding: 2rem; border-radius: 0.5rem; margin-bottom: 2rem; text-align: center;">
+                        <p style="font-size: 1.3rem; font-weight: 700; color: #dc3545; margin-bottom: 1rem;">
+                            Nobody ever wins a court case except the lawyers.
+                        </p>
+                        <p style="font-size: 1.05rem; margin: 0; color: var(--dark-gray);">
+                            That may seem crass, but it's the truth. Don't believe me? Go ask your friends about their past lawsuit experiences.
+                        </p>
+                    </div>
+                    
+                    <h4 style="color: var(--primary-blue); margin-bottom: 1rem; font-size: 1.2rem;">Practically Speaking, Ask Yourself:</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                            <i class="fas fa-question-circle" style="position: absolute; left: 0; top: 0.25rem; color: #dc3545;"></i>
+                            What would constitute a win in my scenario?
+                        </li>
+                        <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                            <i class="fas fa-question-circle" style="position: absolute; left: 0; top: 0.25rem; color: #dc3545;"></i>
+                            What is my budget?
+                        </li>
+                        <li style="margin-bottom: 0; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                            <i class="fas fa-question-circle" style="position: absolute; left: 0; top: 0.25rem; color: #dc3545;"></i>
+                            What are my odds?
+                        </li>
+                    </ul>
+                    
+                    <h4 style="color: #dc3545; margin-bottom: 1rem; font-size: 1.2rem;">Candid Thoughts About Legal Disputes:</h4>
+                    <div style="background: #fff3cd; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1.5rem;">
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                                <i class="fas fa-exclamation-triangle" style="position: absolute; left: 0; top: 0.25rem; color: #856404;"></i>
+                                <strong>No Loser Pays:</strong> There is no loser pays system in the United States. Your attorney fees will be your own problem (except in VERY rare situations).
+                            </li>
+                            <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                                <i class="fas fa-exclamation-triangle" style="position: absolute; left: 0; top: 0.25rem; color: #856404;"></i>
+                                <strong>Courts Collect Costs, Not Solve Problems:</strong> A primary reason is court cases take a LONG time. Frankly, justice delayed is justice denied.
+                            </li>
+                            <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                                <i class="fas fa-exclamation-triangle" style="position: absolute; left: 0; top: 0.25rem; color: #856404;"></i>
+                                <strong>Procedural, Not Merits:</strong> Whatever you want to fight about will likely be resolved procedurally, not based on the merits.
+                            </li>
+                            <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                                <i class="fas fa-exclamation-triangle" style="position: absolute; left: 0; top: 0.25rem; color: #856404;"></i>
+                                <strong>Bankruptcy Reality:</strong> Often, judgements go to bankruptcy.
+                            </li>
+                            <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                                <i class="fas fa-exclamation-triangle" style="position: absolute; left: 0; top: 0.25rem; color: #856404;"></i>
+                                <strong>City Hall:</strong> You can't fight city hall. Well, you can, but you better have great resolve and deep pockets.
+                            </li>
+                            <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                                <i class="fas fa-exclamation-triangle" style="position: absolute; left: 0; top: 0.25rem; color: #856404;"></i>
+                                <strong>Big Business:</strong> Big business wants your money, even if only $2.99 a month. The customers' interests really don't matter.
+                            </li>
+                            <li style="margin-bottom: 0; padding-left: 1.5rem; position: relative; line-height: 1.7;">
+                                <i class="fas fa-exclamation-triangle" style="position: absolute; left: 0; top: 0.25rem; color: #856404;"></i>
+                                <strong>Intellectual Property:</strong> IP is only as valuable as the amount you're willing to spend to defend it.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: var(--light-gray); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem;">
+                        <p style="font-size: 1.05rem; line-height: 1.8; margin: 0;">
+                            <strong>My Policy:</strong> I generally will NOT go to court - except maybe once in a while for an eviction or to collect a debt. You probably shouldn't either.
+                        </p>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue)); padding: 2rem; border-radius: 0.5rem; margin-bottom: 2rem; color: white; text-align: center;">
+                        <p style="font-size: 1.2rem; font-weight: 600; margin: 0;">
+                            However, if I can, I would like to help you strategize how to avoid lawsuits or exit litigation.
+                        </p>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="tel:+14404135311" class="btn btn-primary btn-lg">
+                            <i class="fas fa-phone-alt"></i> Call (440) 413-5311 to Discuss Your Litigation Strategy
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
             <div class="contact-content">
                 <div class="contact-form-wrapper fade-in">
                     <form class="contact-form" id="contactForm">
@@ -486,6 +867,7 @@
                                 <option value="poa">Powers of Attorney</option>
                                 <option value="advancedirectives">Advance Directives</option>
                                 <option value="notary">Notary Services</option>
+                                <option value="litigation">Litigation Avoidance</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
@@ -547,11 +929,26 @@
                             </a>
                         </div>
                         
-                        <div class="cta-box" style="margin-top: 1.5rem;">
-                            <h4>Need Immediate Help?</h4>
-                            <p>Call now for a free consultation</p>
-                            <a href="tel:+14404135311" class="btn btn-primary btn-lg btn-block">
-                                <i class="fas fa-phone-alt"></i> (440) 413-5311
+                        <div class="cta-box" style="margin-top: 1.5rem; background: linear-gradient(135deg, #1e3a8a, #0ea5e9); color: white; border: none;">
+                            <h4 style="color: white; font-size: 1.4rem; margin-bottom: 1rem;">💰 Price Challenge</h4>
+                            <p style="color: white; font-size: 1.05rem; line-height: 1.6; margin-bottom: 0.75rem;">
+                                <strong>I bet you cannot beat my hourly rate.</strong>
+                            </p>
+                            <p style="color: white; font-size: 1rem; line-height: 1.6; margin-bottom: 1rem;">
+                                If you find a lawyer near me that charges less than <strong>$250 an hour</strong> – Please Call Me!
+                            </p>
+                            <p style="color: white; font-size: 0.95rem; line-height: 1.5; margin-bottom: 1rem; opacity: 0.95;">
+                                In particular, I'd be interested in these lower-cost attorney referral areas:
+                            </p>
+                            <ul style="color: white; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.25rem; margin-left: 1.5rem; opacity: 0.95;">
+                                <li>Divorce</li>
+                                <li>Criminal</li>
+                                <li>Tax Appeal</li>
+                                <li>Personal Injury</li>
+                                <li>Business Litigation</li>
+                            </ul>
+                            <a href="tel:+14404135311" class="btn btn-lg btn-block" style="background: white; color: var(--primary-blue); font-weight: 700; border: 2px solid white;">
+                                <i class="fas fa-phone-alt"></i> Call Me: (440) 413-5311
                             </a>
                         </div>
                         
@@ -679,6 +1076,7 @@
                         <li><a href="#services">Powers of Attorney</a></li>
                         <li><a href="#services">Advance Directives</a></li>
                         <li><a href="#services">Notary Services</a></li>
+                        <li><a href="#services">Litigation Avoidance</a></li>
                     </ul>
                 </div>
                 
