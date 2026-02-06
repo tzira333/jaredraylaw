@@ -1,0 +1,30 @@
+{
+  "name": "jaredraylaw",
+  "version": "1.0.0",
+  "description": "Jared Ray Law - Professional law practice website with Cloudflare D1 database",
+  "main": "worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create jaredraylaw-db",
+    "db:migrate": "wrangler d1 migrations apply jaredraylaw-db",
+    "db:migrate:local": "wrangler d1 migrations apply jaredraylaw-db --local",
+    "db:seed": "wrangler d1 execute jaredraylaw-db --file=./migrations/0003_seed_testimonials.sql",
+    "db:list": "wrangler d1 list",
+    "db:query": "wrangler d1 execute jaredraylaw-db --command",
+    "build": "npm run build:public",
+    "build:public": "mkdir -p public && cp index.html public/ && cp -r css public/ && cp -r js public/"
+  },
+  "keywords": [
+    "law",
+    "attorney",
+    "cloudflare",
+    "workers",
+    "d1"
+  ],
+  "author": "Jared Ray Law",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.22.0"
+  }
+}
