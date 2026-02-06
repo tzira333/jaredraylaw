@@ -912,6 +912,62 @@ ul {
 }
 
 /* ========================================
+   PRIVACY POLICY SECTION
+   ======================================== */
+
+.privacy-policy {
+    padding: var(--spacing-xl) var(--spacing-sm);
+    background: var(--white);
+}
+
+.privacy-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.privacy-intro a,
+.privacy-statement a {
+    color: var(--secondary-blue);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.privacy-intro a:hover,
+.privacy-statement a:hover {
+    color: var(--primary-blue);
+    text-decoration: underline;
+}
+
+/* ========================================
+   TERMS OF SERVICE / DISCLAIMER SECTION
+   ======================================== */
+
+.terms-of-service {
+    padding: var(--spacing-xl) var(--spacing-sm);
+    background: var(--light-gray);
+}
+
+.terms-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.terms-statement a,
+.terms-confidential a {
+    color: var(--secondary-blue);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.terms-statement a:hover,
+.terms-confidential a:hover {
+    color: var(--primary-blue);
+    text-decoration: underline;
+}
+
+/* ========================================
    FOOTER
    ======================================== */
 
