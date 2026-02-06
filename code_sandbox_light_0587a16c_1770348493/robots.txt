@@ -1,0 +1,11 @@
+# robots.txt for www.jaredraylaw.com
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.jaredraylaw.com/sitemap.xml
+
+# Disallow specific paths (if any)
+# Disallow: /admin/
+# Disallow: /api/
